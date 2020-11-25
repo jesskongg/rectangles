@@ -1,4 +1,4 @@
-var mysql = require('mysql');
+import mysql from 'mysql';
 
 var db = mysql.createConnection({
   host: process.env.HOST,

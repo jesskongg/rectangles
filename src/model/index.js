@@ -1,6 +1,5 @@
-var express = require('express');
-var path = require('path');
-const uuid = require('uuid');
+import uuid from 'uuid';
+import express from 'express';
 import { getRectangles, putRectangles, deleteRectangles, postRectangles } from './database';
 
 var router = express.Router();

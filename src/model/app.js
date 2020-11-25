@@ -1,7 +1,6 @@
-const http = require('http');
-const express = require('express');
-const fs = require('fs');
-const router = require('./index');
+import http from 'http';
+import express from 'express';
+import router from './index';
 
 const app = express();
 // const hostname = '127.0.0.1';
