@@ -15,7 +15,7 @@ router.put('/update', function(req, res, next) {
 });
 
 // Delete existing rectangles -- PUT?
-router.post('/delete', function(req, res, next) {
+router.put('/delete', function(req, res, next) {
 
 });
 

@@ -1,6 +1,6 @@
 import http from 'http';
 import express from 'express';
-import router from './index';
+import rectangleRouter from './index';
 
 const app = express();
 // const hostname = '127.0.0.1';
@@ -9,10 +9,10 @@ const port = 3306;
 app.use(express.json());
 app.set("port", port);
 
-app.use("/", router);
-app.use("/update", router);
-app.use("/delete", router);
-app.use("/add", router);
+app.use("/", rectangleRouter);
+app.use("/update", rectangleRouter);
+app.use("/delete", rectangleRouter);
+app.use("/add", rectangleRouter);
 
 const server = http.createServer(app);
 
