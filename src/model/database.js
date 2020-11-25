@@ -1,10 +1,10 @@
 import mysql from 'mysql';
 
 var db = mysql.createConnection({
-  host: process.env.HOST,
-  user: process.env.USER,
-  password: process.env.PASSWORD,
-  database: process.env.DATABASE
+  host: 'asn3-4-db',
+  user: 'CLIENT',
+  password: 'client_CMPT470',
+  database: 'cmpt470'
 });
 db.connect();
 
