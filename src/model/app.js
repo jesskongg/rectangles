@@ -9,7 +9,7 @@ const app = express();
 const port = 3000;
 
 app.use(cors());
-// app.use(setHeaders);
+app.use(setHeaders);
 app.use(express.json());
 app.set("port", port);
 
