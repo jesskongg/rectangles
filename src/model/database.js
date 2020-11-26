@@ -11,8 +11,10 @@ db.connect();
 // Get all rectangles in db
 export function getRectangles() {
   let query = 'SELECT * FROM Rectangles;';
+  console.log("Query", query);
   db.query(query, function(err, result) {
     if (err) res.status(400).send(err);
+    console.log("DATABASE RESULT", result);
     res.status(200).send(result);
   });
 };

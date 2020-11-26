@@ -10,7 +10,7 @@ export const getRectangles = () => {
 
   return p
     .then(res => {
-      console.log("Rectangles", res);
+      console.log("Rectangles response", res);
       return res;
     })
     .catch(err => {
