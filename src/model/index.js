@@ -25,4 +25,4 @@ router.post('/add', function(req, res, next) {
   // model query to add entry to rectangle table
 });
 
-module.exports = router;
+export default router;
