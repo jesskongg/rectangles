@@ -4,7 +4,7 @@ import router from './index.js';
 
 const app = express();
 // const hostname = '127.0.0.1';
-const port = 8080;
+const port = 3000;
 
 app.use(express.json());
 app.set("port", port);
@@ -18,5 +18,4 @@ const server = http.createServer(app);
 
 server.listen(port, () => {
   console.log(`Server running at http://localhost:${port}/`);
-  codenames.readWords();
 });
