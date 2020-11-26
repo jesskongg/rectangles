@@ -21,13 +21,14 @@ const RectanglesContainer = (rectangleData) => {
   const styles = useStyles();
 
   const rectangles = () => {
-    rectangleData.map(data => {
-      console.log("Data", data);
-      // return (
-      //   <Rectangle />
-      // );
-      return;
-    })
+    // rectangleData.map(data => {
+    //   console.log("Data", data);
+    //   // return (
+    //   //   <Rectangle />
+    //   // );
+    //   return;
+    // })
+    console.log("RECTANGLE DATA", rectangleData);
   };
 
   return (
