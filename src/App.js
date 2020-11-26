@@ -17,13 +17,23 @@ function App() {
 
   const styles = useStyles();
 
+  const handleOnClick = () => {
+    getRectangles()
+      .then(res => {
+        console.log("getRectangles", res)
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  }
+
 
   return (
     <div css={styles.wrapper}>
       <h1>CRUD Rectangles</h1>
       <h2>Add, delete, and edit rectangles as you please and they will appear below</h2>
       {/* <Rectangle width={20} height={10} color={"red"} radius={0.5} opacity={0.5} cursorType={"pointer"} /> */}
-      <RectanglesContainer rectangleData={getRectangles()}/>
+      <RectanglesContainer rectangleData={() => getRectangles()}/>
       <br/>
       <InputLabel>
         Width:
@@ -50,7 +60,7 @@ function App() {
         <Input type="text" />
       </InputLabel>
       <br/>
-      <Button variant="contained">
+      <Button variant="contained" onClick={handleOnClick()}>
         Submit
       </Button>
     </div>
