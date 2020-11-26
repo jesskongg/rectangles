@@ -18,7 +18,7 @@ app.set("port", port);
 //   next();
 // });
 
-app.use("/", router);
+app.use("/api/all", router);
 app.use("/api/update", router);
 app.use("/api/delete", router);
 app.use("/api/add", router);
