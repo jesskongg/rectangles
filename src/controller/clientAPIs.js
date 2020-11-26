@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const getRectangles = () => {
 
-  let p = axios.get("/", {
+  let p = axios.get("/api/", {
     headers: {
       "Content-Type": "application/json",
     }
@@ -25,7 +25,7 @@ export const putRectangles = (columnName, value, id) => {
     id: id
   };
 
-  let p = axios.put("/update", body, {
+  let p = axios.put("/api/update", body, {
     headers: {
       "Content-Type": "application/json",
     }
@@ -46,7 +46,7 @@ export const deleteRectangles = (id) => {
     id: id
   };
 
-  let p = axios.put("/delete", body, {
+  let p = axios.put("/api/delete", body, {
     headers: {
       "Content-Type": "application/json",
     }
