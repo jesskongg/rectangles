@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const getRectangles = () => {
 
-  let p = axios.get("/api/all", {
+  let p = axios.get("/", {
     headers: {
       "Content-Type": "application/json",
     }
