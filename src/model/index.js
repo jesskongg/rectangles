@@ -5,7 +5,7 @@ import { getRectangles, putRectangles, deleteRectangles, postRectangles } from '
 var router = express.Router();
 
 // Get all rectangles
-router.get('/all', function(req, res, next) {
+router.get('/', function(req, res, next) {
   console.log("GETTING RECTANGLES");
   console.log("REQ", req);
   res.send(getRectangles());
