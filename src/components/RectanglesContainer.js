@@ -32,7 +32,7 @@ const RectanglesContainer = (rectangleData) => {
 
   return (
     <div>
-      
+      {rectangles()}
     </div>
   )
 };
