@@ -60,7 +60,7 @@ function App() {
         <Input type="text" />
       </InputLabel>
       <br/>
-      <Button variant="contained" onClick={handleOnClick()}>
+      <Button variant="contained" onClick={() => handleOnClick()}>
         Submit
       </Button>
     </div>
