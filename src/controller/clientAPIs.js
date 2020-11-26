@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const getRectangles = () => {
 
-  let p = axios.get("/api/", {
+  let p = axios.get("/api/all", {
     headers: {
       "Content-Type": "application/json",
     }
@@ -73,7 +73,7 @@ export const postRectangles = (id, width, height, color, radius, opacity, cursor
     cursorType: cursorType
   };
 
-  let p = axios.post("/add", body, {
+  let p = axios.post("/api/add", body, {
     headers: {
       "Content-Type": "application/json",
     }
