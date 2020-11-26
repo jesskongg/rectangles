@@ -1,6 +1,6 @@
 import http from 'http';
 import express from 'express';
-import router from './index';
+import router from './src/model/index';
 
 const app = express();
 // const hostname = '127.0.0.1';
