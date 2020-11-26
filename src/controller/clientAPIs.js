@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const getRectangles = () => {
 
-  let p = axios.get("http://localhost:3000", {
+  let p = axios.get("http://localhost:3000/", {
     headers: {
       "Content-Type": "application/json",
     }
