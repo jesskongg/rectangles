@@ -1,6 +1,6 @@
 import uuid from 'uuid';
 import express from 'express';
-import { getRectangles, putRectangles, deleteRectangles, postRectangles } from './database';
+import { getRectangles, putRectangles, deleteRectangles, postRectangles } from './database.js';
 
 var router = express.Router();
 
