@@ -20,7 +20,7 @@ function App() {
   const handleOnClick = () => {
     getRectangles()
       .then(res => {
-        console.log("getRectangles", res)
+        console.log("getRectangles", JSON.stringify(res));
       })
       .catch(err => {
         console.log(err);
