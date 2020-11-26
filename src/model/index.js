@@ -6,6 +6,7 @@ var router = express.Router();
 
 // Get all rectangles
 router.get('/', function(req, res, next) {
+  console.log("GETTING RECTANGLES");
   getRectangles();
 });
 
@@ -24,4 +25,4 @@ router.post('/add', function(req, res, next) {
   // model query to add entry to rectangle table
 });
 
-export default router;
+module.exports = router;
