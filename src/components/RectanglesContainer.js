@@ -27,8 +27,14 @@ const RectanglesContainer = (rectangleData) => {
     //   //   <Rectangle />
     //   // );
     //   return;
-    // })
-    console.log("RECTANGLE DATA", rectangleData);
+    // }) 
+    rectangleData
+      .then(res => {
+        console.log("Rectangle data response", res);
+      })
+      .catch(err => {
+        console.log(err);
+      })
   };
 
   return (
