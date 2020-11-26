@@ -9,7 +9,7 @@ const port = 3000;
 app.use(express.json());
 app.set("port", port);
 
-app.use("/all", router);
+app.use("/", router);
 app.use("/update", router);
 app.use("/delete", router);
 app.use("/add", router);
