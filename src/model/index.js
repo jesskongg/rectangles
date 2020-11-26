@@ -5,14 +5,14 @@ import { getRectangles, putRectangles, deleteRectangles, postRectangles } from '
 var router = express.Router();
 
 // Get all rectangles
-router.get('/all', function(req, res, next) {
+router.get('/', function(req, res, next) {
   console.log("GETTING RECTANGLES");
   console.log("REQ", req);
   res.send(getRectangles());
 });
 
 // Change attributes of any of the rectangles
-router.put('/update', function(req, res, next) {
+router.put('/', function(req, res, next) {
   // model query to change specific attribute
 });
 
@@ -22,7 +22,7 @@ router.put('/delete', function(req, res, next) {
 });
 
 // Add new rectangles
-router.post('/add', function(req, res, next) {
+router.post('/', function(req, res, next) {
   // model query to add entry to rectangle table
 });
 
