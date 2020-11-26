@@ -7,9 +7,14 @@ const app = express();
 // const hostname = '127.0.0.1';
 const port = 3000;
 
-app.use(setHeaders);
+// app.use(setHeaders);
 app.use(express.json());
 app.set("port", port);
+
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'http://localhost:8080');
+  next();
+});
 
 app.use("/", router);
 app.use("/api/update", router);
