@@ -4,7 +4,8 @@ export const getRectangles = () => {
 
   let p = axios.get("http://localhost:3000", {
     headers: {
-      "Content-Type": "application/json",
+      // "Content-Type": "application/json",
+      'Content-Type':'application/x-www-form-urlencoded'
     }
   });
 
