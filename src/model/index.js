@@ -7,7 +7,8 @@ var router = express.Router();
 // Get all rectangles
 router.get('/', function(req, res, next) {
   console.log("GETTING RECTANGLES");
-  getRectangles();
+  console.log("REQ", req);
+  res.send(getRectangles());
 });
 
 // Change attributes of any of the rectangles
